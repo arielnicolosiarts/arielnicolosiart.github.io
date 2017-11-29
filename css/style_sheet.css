@@ -91,7 +91,7 @@ p {
 /* Giving a background-color to the nav container. */
 nav {
 
-      background: url("/pics/treelineHeader.gif");
+      background: url("../pics/treelineHeader.gif");
 
       background-origin: content-box;
       background-size: 3000px;
