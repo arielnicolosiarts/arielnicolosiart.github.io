@@ -1,0 +1,64 @@
+
+body{
+     background-color: #E6E7E7;
+ }
+
+ img.splashbear{
+   width: 50%;
+   height:auto;
+ }
+
+
+
+a.splashlink{
+
+
+  padding-top: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a.splashlink:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #5992B6;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a.splashlink:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(.5);
+  transform: scaleX(.5);
+}
+
+
+
+
+a.splashlink:link{
+    font-family: "Shree Devanagari 714", "quicksand", "Myriad Pro", "Avenir Next", Arial, verdana, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8E8E8E;
+    position: relative;
+    }
+
+a.splashlink:visited{
+  color: #8E8E8E;
+  text-decoration: none;
+}
+
+a.splashlink:hover {
+  color: #8E8E8E;
+}
+
+a.splashlink:active {
+  color: ##8E8E8E;
+}

@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/style_sheet.css">
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+
+
+.container {
+  margin: auto;
+  max-width: 100%;
+}
+
+/*Eliminates padding, centers the thumbnail */
+
+body, html {
+padding: 0;
+margin: 0;
+
+}
+
+/* Styles the thumbnail */
+
+a.lightbox img {
+height: 400px;
+margin: 94px 20px 20px 20px;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: #2E6591;
+color: #E6E7E7;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+  }
+}
+
+
+</style>
+
+
+
+</head>
+<html >
+<body ontouchstart="">
+
+
+
+<nav>
+<div id="logo"><h2>ARIEL NICOLOSI</h2></div>
+
+<label for="drop" class="toggle">&#9776;</label>
+<input type="checkbox" id="drop" />
+    <ul class="menu">
+        <li><a href="/">HOME</a></li>
+        <li>
+            <!-- First Tier Drop Down -->
+            <label for="drop-1" class="toggle">ABOUT</label>
+            <a href="#/">ABOUT</a>
+            <input type="checkbox" id="drop-1"/>
+            <ul>
+                <li><a href="/html/biography.html">BIOGRAPHY</a></li>
+                <li><a href="/html/resume.html">RESUME</a></li>
+
+            </ul>
+
+        </li>
+        <li>
+
+        <!-- First Tier Drop Down -->
+        <label for="drop-2" class="toggle">GALLERY</label>
+        <a href="#/">GALLERY</a>
+        <input type="checkbox" id="drop-2"/>
+        <ul>
+            <li><a href="../html/animation.html">ANIMATION</a></li>
+            <li><a href="../html/3dmodels.html">3D MODELS</a></li>
+            <li><a href="../html/illustration.html">ILLUSTRATION</a>
+
+
+            </li>
+            </ul>
+              <li><a href="..//html/contact.php">CONTACT</a></li>
+
+        </li>
+
+    </ul>
+</nav>
+
+
+
+<div class="container">
+
+<a class="lightbox" href="#goofy">
+   <img src="#"/>
+</a>
+<div class="lightbox-target" id="goofy">
+   <img src="#"/>
+   <a class="lightbox-close" href="#"></a>
+</div>
+
+</div>
+
+<footer>
+
+  <div class="footer">
+  <p>Ariel Nicolosi &copy;2017<p>
+</div>
+  </footer>
+</body>
+
+
+</html>
