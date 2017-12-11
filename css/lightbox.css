@@ -143,9 +143,10 @@ left: 10px;
 
 
 .cell iframe{
-
-    height: 100%;
+    
+    padding-top: 100%;
     width: 100%;
+    max-width: 800px;
 
 }
 
@@ -157,7 +158,7 @@ left: 10px;
 }
 
 .responsive-image {
-  width: 100%;
+
   max-width: 800px;
 }
 
