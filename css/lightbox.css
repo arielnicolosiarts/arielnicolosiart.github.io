@@ -138,13 +138,18 @@ left: 10px;
 
 
 
+
+
+
+
+
 .container {
   margin: auto;
   max-width: 1200px;
 }
 
 .responsive-image {
-  height: 100%;
+  width: 100%;
   max-width: 800px;
 }
 
