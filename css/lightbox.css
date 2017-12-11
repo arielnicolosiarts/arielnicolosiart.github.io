@@ -138,27 +138,13 @@ left: 10px;
 
 
 
-
-
-
-
-.cell iframe{
-    
-    padding-top: 100%;
-    width: 100%;
-    max-width: 800px;
-
-}
-
-
-
 .container {
   margin: auto;
   max-width: 1200px;
 }
 
 .responsive-image {
-
+  height: 100%;
   max-width: 800px;
 }
 
