@@ -9,26 +9,22 @@
 
 <style>
 
-img.bg {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-
-  /* Set up positioning */
+#bg {
   position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bg img {
+  position: absolute;
   top: 0;
   left: 0;
-}
-
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
 }
 
 }
@@ -56,8 +52,10 @@ h1 {
 </head>
 <body>
 
-<img class="bg" src="/pics/spiritbear_splash.png"> </img>
 
+<div id="bg">
+  <img src="/pics/spiritbear_splash.png" alt="">
+</div>
   <center>
 
 
